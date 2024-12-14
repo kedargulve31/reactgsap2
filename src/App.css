@@ -1,38 +1,205 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header  
+{
+  height: 80px;
+  background-color: darkmagenta;
+  color: white;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  padding: 10px 6%;
+}
+
+.header .links{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+gap: 20px;
+}
+
+.header .links a{
+  text-decoration: none;
+  color: gold;
+}
+
+.homepage{
+  background: url('https://t3.ftcdn.net/jpg/08/11/73/58/240_F_811735869_DaXva6J3tb9pO6qo9Cm3coKlxFM1Y6oW.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.homepage h2 
+{
+  font-size: 28px;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.homepage button{
+  padding: 8px 40px;
+  background: fuchsia;
+  color: white;
+  border: 1px solid red;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.homepage button:hover{
+  background: lightcoral;
+  color: white;
+  border: 1px solid gold;
+}
+
+.cards{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+  padding: 20px 12%;
+}
+.card-container{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+}
+
+.cards .heading{
+  height: 60px;
+  background: deeppink;
+  color: white;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 28px;
+}
+
+
+.cards .card{
+  height: 350px;
+  width: 320px;
+  border: 1px solid black;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.56);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+text-align: center;
+transition: all ease-in 0,3s;
+}
+
+.card img {
+  padding: 10px;
+  height: 140px;
+  width: 140px;
+  border-radius: 60%;
+}
+
+.card img:hover{
+
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.card:hover{
+  transform: translateY(10);
+  cursor: pointer;
+}
+
+.about{
+  height: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+.about h2{
+  text-align: center;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.about .banner{
+  background: url('https://img.freepik.com/free-vector/contact-us-landing-page-illustration_52683-18236.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+  height: 100%;
+}
+
+.about .content{
+  width: 50%;
+  height: 100%;
+display: flex;
+align-items: center;
+justify-content: start;
+font-size: 18px;
+}
+
+.about .content p{
+  initial-letter: Capital;
+}
+.about .content p::first-letter {
+  font-size: 200%;
+  font-weight: bold;
+  color: #8A2BE2;
+}
+.contact{
+  height: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.contact .banner{
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZy8NncS3I1f9I-Fq4OocYlAL0aQ4JDTCmMg&s');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+  height: 100%;
+}
+
+form .input-filed input,
+.container button{
+  width: 100%;
+  margin-bottom: 0.6em;
+  padding: 7px 20px;
+}
+ form button{
+  text-align: center;
+color: white;
+background: green;
+outline: none;
+border: 1px solid red;
+font-size: 14px;
+border-radius: 4px;
+}
+
+.page2{
+  height: 700px;
+  width: 100%;
+  background: lightblue;
+  
+}
+
+.page2 h2{
+  font-size: 320px;
+  color: red;
+ 
 }
